@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/Screens/Home/home_screen.dart';
 import 'package:food_app/constants.dart';
+import 'package:food_app/screens/home/home-screen.dart';
 
-void main() {
-  runApp(const FoodApp());
-}
+void main() => runApp(MyApp());
 
-class FoodApp extends StatelessWidget {
-  const FoodApp({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,8 +15,8 @@ class FoodApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
         textTheme: TextTheme(
-          bodyText1: TextStyle(color: kSecondaryColor),
-          bodyText2: TextStyle(color: kSecondaryColor),
+          bodyText1: TextStyle(color: ksecondaryColor),
+          bodyText2: TextStyle(color: ksecondaryColor),
         ),
       ),
       home: HomeScreen(),
